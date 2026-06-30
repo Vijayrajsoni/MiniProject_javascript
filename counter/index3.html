@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <center>
+  <h1>Counter Application</h1>
+  <h3></h3>
+  <button id="b1">Increase</button>
+    <button id="b2">decrease</button>
+      <button id="b3">Increase by 10</button>
+        <button id="b4">reset</button>
+    </center>
+     <script>
+       let c = document.getElementById("b1"); 
+let x = document.querySelector("h3"); 
+let count = 0; 
+
+c.addEventListener("click", function() { 
+    x.innerHTML = ++count; 
+});
+document.getElementById("b2").addEventListener("click",function(){
+    x.innerHTML=--count
+})
+
+document.getElementById("b3").addEventListener("click",function(){
+    x.innerHTML=count+10
+})
+document.getElementById("b4").addEventListener("click",function(){
+    x.innerHTML=0
+})
+
+
+    </script>
+</body>
+</html>
